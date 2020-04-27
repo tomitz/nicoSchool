@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -15,6 +16,7 @@ module.exports = {
     "rules": {
         'semi': ['error', 'never'],
         'quotes': ['error', 'single'],
-        "indent": ["error", 2]
+        "indent": ["error", 2],
+        "keyword-spacing": ["error", { "before": true, "after": true }]
     }
 };
